@@ -112,3 +112,9 @@ export const SignupForm = () => {
     </div>
   );
 };
+
+
+
+// We want to accept a number() which is positive() and is an integer(). We also want to make sure it is required(). Yup makes error messages easy to define. We can pass the error message we want to display in the broken rule by passing a string into the rule definition like we did here required("Must enter age").
+
+// We can access these errors in the JSX by using the formik hooks errors attribute <p style={{color:'red'}}> {formik.errors.name}</p>. In this example we show the validation errors as a red <p> tag.
